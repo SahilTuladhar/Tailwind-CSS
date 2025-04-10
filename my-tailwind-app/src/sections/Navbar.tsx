@@ -17,8 +17,13 @@ const Navbar = () => {
             navLinks.map((item) => (
                <a href={item.href} 
                className="font-montserrat leading-normal text-lg text-slate-gray"
-               >
-                  <li key={item.label}>{item.label}</li>
+               >  
+               <div className="group block">
+               <li key={item.label}>{item.label}
+                  <hr className="border-t-2 border-purple-900 mt-2 -top-10 opacity-0 relative group-hover:translate-y-9 group-hover:opacity-85 transition-all duration-700 ease-in-out" />
+                  </li>
+               </div>
+                  
                </a>
             ))
            }

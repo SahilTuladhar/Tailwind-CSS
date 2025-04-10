@@ -45,7 +45,7 @@ const Hero = () => {
             <Button label="Shop now" iconURL={arrowRight} 
         />
          
-         <div className="w-[80%] h-36 mt-9 p-4 flex gap-16 justify-evenly flex-wrap  shadow-xl rounded-[20px] ">
+         <div className="w-[80%] h-36 mt-9 sm:mb-10 p-4 flex gap-16 justify-evenly flex-wrap  shadow-xl rounded-[20px] ">
             {
                statistics.map((stat,index) => (
                   <div  className=" flex flex-col p-2 w-[12%] h-26 justify-center items-center h-90 hover:w-[18%] hover:h-28 transition-all duration-1000">

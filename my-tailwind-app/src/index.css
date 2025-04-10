@@ -55,4 +55,8 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+
+  .small-text{
+    @apply text-sm font-montserrat text-slate-400 font-semibold 
+  }
 }

@@ -8,7 +8,7 @@ function App() {
   return (
     <main className='relative'>
       <Navbar/>
-      <section className='xl: padding-1 wide:padding-r padding-b'>
+      <section className='xl: padding-1 wide:padding-r padding-b max-w-full'>
         <Hero />
       </section>
       <section className='padding'>

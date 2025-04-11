@@ -1,3 +1,4 @@
+import { transform } from "typescript";
 
 export default {
   content: [
@@ -37,8 +38,31 @@ export default {
       },
       screens: {
         "wide": "1440px"
+      },
+      keyframes: {
+        'slide-in-lr': {
+          '0%' : {opacity: '0',
+           transform : 'translateX(-12rem)'},
+          '100%' : {opacity:'1',
+            transform: ' translate(0)'}
+        },
+        'slide-in-rl':{
+          '0%': {opacity: '0', transform : 'translateX(12rem)'},
+          '100%': {opacity: '1',transform : 'translateX(0)'}
+        }, 
+        'slide-in-bt':{
+          '0%': {opacity: '0', transform : 'translateY(12rem)'},
+          '100%': {opacity: '1',transform : 'translateY(0)'}
+        },
+
+      },
+      animation: {
+        'slide-in-lr': 'slide-in-lr 1s ease-out forwards' , 
+        'slide-out-lr' : 'slide-in-rl 1s ease-out backwards',
+        'slide-in-bt' : 'slide-in-bt 1s ease-out upwards'
+
       }
     },
   },
-  plugins: [],
+  plugins: [require('@adam.plesnik/tailwindcss-scroll-driven-animations'),],
 }

@@ -15,10 +15,10 @@ const Hero = () => {
 
     return(
        <section id="home" 
-       className="w-full flex xl:flex-row flex-col justify-center min-h-screen ">
-          <div className="relative flex flex-col justify-center items-start  xl:w-2/5 w-full max-xl:padding-x pt-28 p-5 gap-10 left-24">
+       className="w-full flex xl:flex-row flex-col justify-center min-h-screen max-container">
+          <div className="relative flex flex-col justify-center items-start  xl:w-2/5 w-full max-xl:padding-x pt-28 p-5 gap-10 left-24 transform -translate-x-48 animate-slide-in-lr timeline--fade animation-range-entry-10% animation-range-exit-80% z-10 transition-all duration-1000">
             <p className="text-[26px] text-orange-600 mb-5" >Our Summer Collection</p>
-            <h1 className="font-montserrat font-bold text-8xl bg-white min-w-[full z-10 p-5 rounded-xl shadow-xl">
+            <h1 className="font-montserrat font-bold text-8xl bg-white w-full z-10 p-5 rounded-xl shadow-xl">
                <span className=" w-full">The New Arrival</span>
                <br />
                <div className="group flex items-center">
@@ -58,7 +58,9 @@ const Hero = () => {
           </div >
 
           </div>
-          <div className="m-0 relative flex justify-center items-center xl:min-h-screen flex-1 bg-pr imary bg-hero bg-cover bg-center">
+
+
+          <div className="m-0 relative flex justify-center items-center xl:min-h-screen flex-1 bg-pr imary bg-hero bg-cover bg-center transform animate-slide-out-lr">
   <img 
     src={bigImg} 
     alt="shoe1" 

@@ -13,3 +13,9 @@ export type ShoeProps= {
         thumbnail: string,
         bigShoe : string,
     }
+
+export type ProductCardProps = {
+    imgURL: string,
+    price : string,
+    name : string
+}

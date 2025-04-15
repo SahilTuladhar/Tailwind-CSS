@@ -59,7 +59,7 @@ export default {
       animation: {
         'slide-in-lr': 'slide-in-lr 1s ease-out forwards' , 
         'slide-out-lr' : 'slide-in-rl 1s ease-out backwards',
-        'slide-in-bt' : 'slide-in-bt 1s ease-out upwards'
+        'slide-in-bt' : 'slide-in-bt 1s ease-out forwards'
 
       }
     },

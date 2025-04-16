@@ -18,11 +18,11 @@ const Hero = () => {
    const leftref= useRef(null)
    const rightref = useRef(null)
    const isLeftInView = useInView(leftref , {
-      once : false,
+      once : true,
       amount : 0.2,
    })
    const isRightInView = useInView(rightref , {
-      once:false,
+      once:true,
       amount:0.2,
    })
    const [bigImg , setBigImg] = useState(bigShoe1)
@@ -82,7 +82,7 @@ const Hero = () => {
           initial = {{opacity : 0 , x : 100}}
           whileInView  = {{opacity : 1 , x : 0}}
           transition={{duration : 1 , ease : 'easeInOut'}}
-         viewport={{once:false , amount: 0.2}}
+         viewport={{once:true , amount: 0.2}}
           className="m-0 relative flex justify-center items-center xl:min-h-screen flex-1 bg-primary bg-hero bg-cover bg-center ">
   <img 
     src={bigImg} 

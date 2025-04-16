@@ -6,7 +6,7 @@ import Hello from './CrashCourse/Hello';
 
 function App() {
   return (
-    <main className='relative'>
+    <main className='relative '>
       <Navbar/>
       <section className='xl: padding-l wide:padding-r padding-b max-w-full'>
         <Hero />
@@ -15,7 +15,7 @@ function App() {
         <PopularProducts />
       </section>
 
-      <section className='padding'>
+      <section className='padding flex justify-center items-center'>
         <SuperQuality/>
       </section>
 

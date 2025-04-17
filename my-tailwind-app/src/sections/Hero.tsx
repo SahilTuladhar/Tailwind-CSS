@@ -57,7 +57,7 @@ const Hero = () => {
 
             <p className="text-xl z-10 p-2 font-semibold sm:w-[80%] mt-5 mb-5 font-montserrat text-slate-400" >Discover Stylish Nike arrivals, quality comfort and innovation for your active life</p>
             
-            <Button label="Shop now" iconURL={arrowRight} 
+            <Button label="Shop now" className = "bg-violet-400'" iconURL={arrowRight} 
         />
          
          <div className="w-[80%] h-36 mt-9 sm:mb-10 p-4 flex gap-16 justify-evenly flex-wrap  shadow-xl rounded-[20px] ">

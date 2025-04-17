@@ -1,6 +1,8 @@
 export type ButtonProps = {
  label : string;
- iconURL : string; 
+ iconURL? : string;
+ className?: string
+
 }
 
 export type ShoeCardProps = {

@@ -12,11 +12,13 @@ const CustomerReviews = () => {
          Are Saying?
       </h3>
       <p className="info-text max-w-[40%] ">Hear genuine stories from out satisfied customers about their exceptional experience with us</p>
+      <div className="flex flex-col gap-10 sm:flex-row justify-center items-center">
       {
          reviews.map((review) => (
             <CustomerCard key={review.customerName} {...review}/>
          ))
       }
+      </div>
 
     </section>
  )

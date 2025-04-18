@@ -17,7 +17,7 @@ const CustomerCard = ({imgURL , customerName , rating , feedback} : CustomerCard
     }
 
  return(
-    <div className="flex flex-col justify-center items-center border max-w-[45%] rounded-md shadow-md p-5 space-y-5">
+    <div className="flex flex-col max-sm:w-[70%] justify-center items-center border max-w-[45%] rounded-md shadow-md p-10 space-y-5">
         <img src={imgURL} className="w-[200px] h-[200px] rounded-full object-contain" alt="" />
         <p className="info-text w-[50%]">{feedback}</p>
         <div className="flex gap-5">

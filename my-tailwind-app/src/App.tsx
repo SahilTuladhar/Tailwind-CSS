@@ -1,14 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import HomePage from './pages/HomePage';
 import Hello from './CrashCourse/Hello';
+import { Route , Routes } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
+    <Routes>
 
-    <> 
-       <HomePage />
-    </>
+      <Route path = "/register-page" element = {<LoginPage />}/>
+      <Route path = "/home-page" element = {<HomePage />}/>
+
+    </Routes>
+
+  
     
   );
 }

@@ -1,5 +1,9 @@
+import { time } from "console";
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import usa from '../assets/images/usa-pic1.jpg'
+import london from '../assets/images/london.jpg'
+import spain from '../assets/images/spain.jpg'
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -125,3 +129,63 @@ export const socialMedia = [
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
 ];
+
+
+export const ourLocations = [
+    { 
+        offset: 0,
+        location:"United States", 
+        alt:'Usa image' ,
+        src: usa,
+        desc: 'The United States of America (USA), often referred to as the U.S. or simply America, is a large country located primarily in North America. Its a federal republic of 50 states and the District of Columbia',
+        city: 'Los Angeles | Sanfransico | New york',
+        email: 'nike-usa@gmail.com',
+        contact: '(123) 456-7890',
+        time: '12:00 - 21:30'
+        
+    },
+
+    { 
+        offset: 1,
+        location:"Spain", 
+        alt:'Usa image' ,
+        src: spain,
+        desc: 'The United States of America (USA), often referred to as the U.S. or simply America, is a large country located primarily in North America. Its a federal republic of 50 states and the District of Columbia',
+        city: 'Barcelona | Madrid | Sevilla ',
+        email: 'nike-es@gmail.com',
+        contact: '(123) 456-7890',
+        time: '9:00 - 18:30'
+        
+    },
+
+    { 
+        offset: 2,
+        location:"United Kingdom", 
+        alt:'Usa image' ,
+        src: london,
+        desc: 'The United States of America (USA), often referred to as the U.S. or simply America, is a large country located primarily in North America. Its a federal republic of 50 states and the District of Columbia',
+        city: 'London | Manchester | Liverpool',
+        email: 'nike-uk@gmail.com',
+        contact: '(123) 456-7890',
+        time: '11:00 - 20:30'
+        
+    },
+
+    // {   
+    //     offset:1,
+    //     location:"United States", 
+    //     alt:'Usa image' ,
+    //     src: '../assets/images/usa.jpg',
+    //     desc: 'The United States of america',
+
+    // },
+
+    // {   
+    //     offset:2,
+    //     location:"London", 
+    //     alt:'London image' ,
+    //     src: 'my-tailwind-app/src/assets/images/london.jpg',
+    //     desc: 'The United States of america',
+
+    // }
+]

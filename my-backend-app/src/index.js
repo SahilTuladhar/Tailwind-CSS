@@ -10,6 +10,8 @@ import app from './app.js';
 const port = process.env.PORT || 4000
 
 
+// Creating conenction with MongoDB database
+
 connectDB()
 .then(() => {
 
